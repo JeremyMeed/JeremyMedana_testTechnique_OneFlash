@@ -1,0 +1,12 @@
+{
+    "Sitetitle": "Angular Multi Language App",
+    "Presentation": "This application was designed as part of a technical exercise in order to set up internationalization.",
+    "FormTitle": "Contact Form",
+    "Name": "Name :",
+    "FirstName": "First name :",
+    "Birthday": "Date of birth :",
+    "Email": "Email address :",
+    "PhoneNo": "Phone number :",
+    "Bio": "Enter one adjective to describe yourself :",
+    "Submit": "Submit"
+}

@@ -1,0 +1,52 @@
+<nav class="navbar navbar-dark bg-success">
+  <div class="container">
+    <h1 class="navbar-brand">
+      {{'Sitetitle' | translate }}
+    </h1>
+    <span class="form-inline">
+      <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+        <option *ngFor="let language of translate.getLangs()" [value]="language"
+          [selected]="language === translate.currentLang">
+          {{ language }}
+        </option>
+      </select>
+    </span>
+  </div>
+</nav>
+
+  <h2 class="text-center m-4">{{'Presentation' | translate }}</h2>
+<div class="container pb-2">
+  <h3 class="text-center pt-5 pb-3">{{'FormTitle' | translate}}</h3>
+  <form>
+    <div class="form-group">
+      <label>{{'Name' | translate}}</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>{{'FirstName' | translate}}</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>{{'Birthday' | translate}}</label>
+      <input type="date" max="2021-12-31" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>{{'Email' | translate}}</label>
+      <input type="email" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>{{'PhoneNo' | translate}}</label>
+      <input type="tel" pattern="[0-9]{10}" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>{{'Bio' | translate}}</label>
+      <input type="text" minlength="3" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-block btn-success">{{'Submit' | translate}}</button>
+  </form>
+</div>
